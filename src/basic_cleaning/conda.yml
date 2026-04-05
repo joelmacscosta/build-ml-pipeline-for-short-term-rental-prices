@@ -4,7 +4,8 @@ channels:
   - defaults
 dependencies:
   - pip=24.3.1
+  - pandas=2.3.2
   - python=3.13
   - pip:
       - mlflow==3.3.2
-      - wandb==0.21.3
+      - wandb==0.24.0
