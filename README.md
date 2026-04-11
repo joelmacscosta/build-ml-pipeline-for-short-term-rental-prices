@@ -20,7 +20,7 @@ This project was developed as part of the requirements for the course: [Building
 
 ## Project Links
 
- * [Weights & Biases NYC rental properties project](https://wandb.ai/jcsc-usp/nyc_airbnb)
+ * [Weights & Biases NYC rental properties project](https://wandb.ai/jcsc-usp/nyc_airbnb?nw=nwuserjoelmacscosta)
  * [Github repository](https://github.com/joelmacscosta/build-ml-pipeline-for-short-term-rental-prices)
 
 ## Overview of the Pipeline Component and Code Organisation 
