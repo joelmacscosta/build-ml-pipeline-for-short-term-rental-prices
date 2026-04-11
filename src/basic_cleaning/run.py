@@ -27,8 +27,15 @@ def go(args):
 
     logger.info("Cleaning data")
     # Perform basic cleaning operations
+    df = df.drop_duplicates()
+    df = df.dropna(subset=["price"])
     df = df[(df['price'] >= args.min_price) & (df['price'] <= args.max_price)]
 
+    # Add this boundary filter
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
+
+    logger.info("Cleaned data has %s rows and %s columns", *df.shape)
     logger.info("Saving cleaned data")
     df.to_csv(args.output_artifact, index=False)
 
